@@ -1,0 +1,47 @@
+commande de base: 
+
+étapes pour commit:
+
+1) configurer compte git: git config --global user.name "surnom"
+			git config --global user.email "email"
+
+2) initialiser un repo: git init à l'intérieur du répo visé 
+
+3) ajouté des fichiers dans le git: git add nom_du_fichier / git add . (tous les fichiers)
+
+4) faire un commit: git commit (-m permet de laisser un message// -a demande à git de mettre à jour les fichiers déja existants dans son index): ajout les fichiers dans le commit 
+
+5) git log: permet de visualiser les commit réalisé
+
+6) git checkout nomducommit permet de se positionner sur un commit 
+
+// tips
+
+-git revert nomDuCommit créer un nvx commit en inversant 
+
+-git commit --amend -m "permet de modifier le message du commit"
+
+-git reset --hard : permet d'annuler tout les changements pas encore commit
+
+!Attention! il n'est pas possible d'annuler un commit
+
+
+// Github lessons
+
+1/ create a new repository on the command line
+
+echo "# thp" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/lobamos/thp.git
+git push -u origin master
+
+2/ push an existing repository from the command line
+
+git remote add origin https://github.com/lobamos/thp.git
+git push -u origin master
+
+3/ import code from another repository
+
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
